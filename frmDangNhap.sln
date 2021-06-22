@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyGarage", "frmDangNhap\QuanLyGarage.csproj", "{80147720-AFC6-4162-9453-10BAE3B887FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO_QuanLy", "DTO_QuanLy\DTO_QuanLy.csproj", "{E236CC46-F2E4-4910-AAE7-AB0E544366EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80147720-AFC6-4162-9453-10BAE3B887FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80147720-AFC6-4162-9453-10BAE3B887FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80147720-AFC6-4162-9453-10BAE3B887FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80147720-AFC6-4162-9453-10BAE3B887FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E236CC46-F2E4-4910-AAE7-AB0E544366EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E236CC46-F2E4-4910-AAE7-AB0E544366EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E236CC46-F2E4-4910-AAE7-AB0E544366EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E236CC46-F2E4-4910-AAE7-AB0E544366EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {479BB800-116A-4EAF-A5F4-2C3C84F0707E}
+	EndGlobalSection
+EndGlobal

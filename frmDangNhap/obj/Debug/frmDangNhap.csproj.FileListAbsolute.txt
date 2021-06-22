@@ -1,0 +1,9 @@
+C:\Users\TUAN\source\repos\frmDangNhap\frmDangNhap\bin\Debug\frmDangNhap.exe.config
+C:\Users\TUAN\source\repos\frmDangNhap\frmDangNhap\bin\Debug\frmDangNhap.exe
+C:\Users\TUAN\source\repos\frmDangNhap\frmDangNhap\bin\Debug\frmDangNhap.pdb
+C:\Users\TUAN\source\repos\frmDangNhap\frmDangNhap\obj\Debug\frmDangNhap.csprojAssemblyReference.cache
+C:\Users\TUAN\source\repos\frmDangNhap\frmDangNhap\obj\Debug\frmDangNhap.Form1.resources
+C:\Users\TUAN\source\repos\frmDangNhap\frmDangNhap\obj\Debug\frmDangNhap.Properties.Resources.resources
+C:\Users\TUAN\source\repos\frmDangNhap\frmDangNhap\obj\Debug\frmDangNhap.csproj.GenerateResource.cache
+C:\Users\TUAN\source\repos\frmDangNhap\frmDangNhap\obj\Debug\frmDangNhap.exe
+C:\Users\TUAN\source\repos\frmDangNhap\frmDangNhap\obj\Debug\frmDangNhap.pdb
