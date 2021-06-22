@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using BUS_QuanLy;
 
 namespace frmDangNhap
 {
@@ -33,12 +34,10 @@ namespace frmDangNhap
                 MessageBox.Show("Vui lòng nhập mật khẩu!");
             else
             {
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TUAN\Documents\DataUser.mdf;Integrated Security=True;Connect Timeout=30");
-                SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From Login where Username='" + tbUserName.Text + "' and Password='" + tbPassword.Text + "'", con);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-
-                if (dt.Rows[0][0].ToString() == "1")
+                string TaiKhoan = tbUserName.Text;
+                string MatKhau = tbPassword.Text;
+                
+                if (DangNhap(TaiKhoan, MatKhau))
                 {
                     MessageBox.Show("Đăng nhập thành công!", "Thông báo");
                     frmMain frm = new frmMain();
@@ -55,6 +54,11 @@ namespace frmDangNhap
             }
             
 
+        }
+
+        bool DangNhap(string TaiKhoan, string MatKhau)
+        {
+            return TaiKhoanBUS.Instance.DangNhap(TaiKhoan, MatKhau);
         }
 
         private void fLogin_FormClosing(object sender, FormClosingEventArgs e)

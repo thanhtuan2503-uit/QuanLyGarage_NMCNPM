@@ -90,6 +90,7 @@
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.Size = new System.Drawing.Size(253, 30);
             this.tbUserName.TabIndex = 5;
+            this.tbUserName.Text = "staff";
             // 
             // tbPassword
             // 
@@ -98,6 +99,8 @@
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(253, 30);
             this.tbPassword.TabIndex = 6;
+            this.tbPassword.Text = "12";
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // panel1
             // 

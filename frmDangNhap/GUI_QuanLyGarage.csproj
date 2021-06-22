@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fAccountProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAccountProfile.Designer.cs">
+      <DependentUpon>fAccountProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDoiMatKhau.Designer.cs">
+      <DependentUpon>fDoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyGarageDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyGarageDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fAccountProfile.resx">
+      <DependentUpon>fAccountProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDoiMatKhau.resx">
+      <DependentUpon>fDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,9 +107,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuanLyGarageDataSet.xsc">
+      <DependentUpon>QuanLyGarageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyGarageDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyGarageDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QuanLyGarageDataSet.xss">
+      <DependentUpon>QuanLyGarageDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_QuanLy\BUS_QuanLyGarage.csproj">
+      <Project>{4cd1b0b1-ec45-41f6-b8c1-df3c8d83e397}</Project>
+      <Name>BUS_QuanLyGarage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QuanLyGarage\DTO_QuanLyGarage.csproj">
+      <Project>{8b75e9b3-9aba-4417-a03c-27b2aaf6364e}</Project>
+      <Name>DTO_QuanLyGarage</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
